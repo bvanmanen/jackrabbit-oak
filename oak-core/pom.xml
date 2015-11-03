@@ -30,6 +30,7 @@
   <artifactId>oak-core</artifactId>
   <name>Oak Core</name>
   <packaging>bundle</packaging>
+  <version>1.2.2-R001-SNAPSHOT</version>
 
   <build>
     <plugins>
@@ -184,29 +185,29 @@
     <dependency>
       <groupId>org.apache.jackrabbit</groupId>
       <artifactId>oak-mk-api</artifactId>
-      <version>${project.version}</version>
+      <version>1.2.2</version>
     </dependency>
     <dependency>
       <groupId>org.apache.jackrabbit</groupId>
       <artifactId>oak-commons</artifactId>
-      <version>${project.version}</version>
+      <version>1.2.2</version>
     </dependency>
     <dependency>
       <groupId>org.apache.jackrabbit</groupId>
       <artifactId>oak-commons</artifactId>
-      <version>${project.version}</version>
+      <version>1.2.2</version>
       <type>test-jar</type>
       <scope>test</scope>
     </dependency>
     <dependency>
       <groupId>org.apache.jackrabbit</groupId>
       <artifactId>oak-blob</artifactId>
-      <version>${project.version}</version>
+      <version>1.2.2</version>
     </dependency>
     <dependency>
       <groupId>org.apache.jackrabbit</groupId>
       <artifactId>oak-blob-cloud</artifactId>
-      <version>${project.version}</version>
+      <version>1.2.2</version>
       <optional>true</optional>
     </dependency>
     <!-- General utility libraries -->
@@ -344,7 +345,7 @@
     <dependency>
       <groupId>org.apache.jackrabbit</groupId>
       <artifactId>oak-blob</artifactId>
-      <version>${project.version}</version>
+      <version>1.2.2</version>
       <classifier>tests</classifier>
       <scope>test</scope>
     </dependency>

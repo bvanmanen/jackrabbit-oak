@@ -206,6 +206,16 @@ public class SegmentBlob extends Record implements Blob {
             if (this.wasCompactedTo(that) || that.wasCompactedTo(this)) {
                 return true;
             }
+
+            BlobStore blobStore = getSegment().getSegmentId().getTracker().getStore().getBlobStore();
+            BlobStore otherBlobStore = that.getSegment().getSegmentId().getTracker().getStore().getBlobStore();
+            if ((blobStore != null) && (blobStore == otherBlobStore)) {
+                String ref = getReference();
+                String otherRef = that.getReference();
+                if ((ref != null) && (otherRef != null)) {
+                    return ref.equals(otherRef);
+                }
+            }
         }
         return object instanceof Blob
                 && AbstractBlob.equal(this, (Blob) object);
